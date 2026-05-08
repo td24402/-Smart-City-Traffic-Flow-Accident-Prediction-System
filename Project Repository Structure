@@ -1,0 +1,55 @@
+smart-city-traffic-prediction/
+├── README.md
+├── requirements.txt
+├── setup.py
+├── .gitignore
+├── LICENSE
+├── config/
+│   ├── __init__.py
+│   └── config.yaml
+├── data/
+│   ├── raw/                    (gitignored)
+│   ├── processed/              (gitignored)
+│   └── sample_data/            (small sample for testing)
+├── notebooks/
+│   ├── 01_EDA_and_Visualization.ipynb
+│   ├── 02_Statistical_Analysis.ipynb
+│   └── 03_Model_Development.ipynb
+├── src/
+│   ├── __init__.py
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── generate_synthetic_data.py
+│   │   ├── data_cleaning.py
+│   │   └── data_loader.py
+│   ├── features/
+│   │   ├── __init__.py
+│   │   └── feature_engineering.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── random_forest_model.py
+│   │   ├── lstm_model.py
+│   │   └── model_evaluation.py
+│   ├── visualization/
+│   │   ├── __init__.py
+│   │   └── plot_dashboard.py
+│   └── utils/
+│       ├── __init__.py
+│       ├── helpers.py
+│       └── database.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_data_cleaning.py
+│   ├── test_feature_engineering.py
+│   └── test_models.py
+├── scripts/
+│   ├── run_etl_pipeline.py
+│   ├── train_models.py
+│   └── generate_report.py
+├── outputs/
+│   ├── figures/                (gitignored)
+│   ├── models/                 (gitignored)
+│   └── reports/                (gitignored)
+└── docker/
+    ├── Dockerfile
+    └── docker-compose.yml
